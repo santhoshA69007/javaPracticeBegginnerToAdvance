@@ -9,7 +9,7 @@ public class Account {
 
     public  Account(String customerNmae,String email,long balance,long accountNumber,long phone_number){
 
-        System.out.println("paramtere constructor being used!");
+        System.out.println("paramtere constructor being useddd!");
         this.customerNmae=customerNmae;
         this.email=email;
         this.balance=balance;
