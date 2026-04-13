@@ -4,6 +4,7 @@ public class Account {
 
 
     public Account(){
+        this("unknown","unknown@email.com",1000,696969462342364l,696969969l);
         System.out.println("Empty Constructor being used!!");
     }
 
@@ -16,6 +17,15 @@ public class Account {
         this.accountNumber=accountNumber;
         this.phone_number=phone_number;
     }
+
+    public Account(String customerNmae, String email, long phone_number) {
+
+        this(customerNmae,email,phone_number,99999999l,76878758);
+//        this.customerNmae = customerNmae;
+//        this.email = email;
+//        this.phone_number = phone_number;
+    }
+
 
     public String getCustomerNmae() {
         return customerNmae;

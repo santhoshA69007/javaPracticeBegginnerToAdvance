@@ -13,4 +13,10 @@ void main() {
     santhosh.deposit(5000);
     santhosh.withdraw(300);
     santhosh.withdraw(5701);
+
+    Account sam=new Account();
+    sam.display();
+
+    Account tim=new Account("tim","tim@gmail.com",435463323l);
+    tim.display();
 }
