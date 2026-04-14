@@ -1,6 +1,6 @@
 public class DistanceFormula {
 
-    private int x,y;
+    private int x,y,z;
 
     public DistanceFormula() {
     }
