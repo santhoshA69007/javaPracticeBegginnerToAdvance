@@ -1,0 +1,28 @@
+public class SalariedEmployee extends Employee{
+private double annualSalary;
+private boolean isRetired;
+
+    public SalariedEmployee(String name, String birthDate, String endDate, long employeeId, String hireDate, double annualSalary, boolean isRetired) {
+        super(name, birthDate, endDate, employeeId, hireDate);
+        this.annualSalary = annualSalary;
+        this.isRetired = isRetired;
+    }
+
+    public void retire(){
+    System.out.println(isRetired);
+}
+
+
+    @Override
+    public double collectPay() {
+        return this.annualSalary;
+    }
+
+    @Override
+    public String toString() {
+        return "SalariedEmployee{" +
+                "annualSalary=" + annualSalary +
+                ", isRetired=" + isRetired +
+                "} " + super.toString();
+    }
+}
