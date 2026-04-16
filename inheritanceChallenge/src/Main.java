@@ -10,7 +10,7 @@ HourlyEmployee bob=new HourlyEmployee("bob","2000","2065",69420l,"2023",99);
     santhosh.retire();
     santhosh.terminate(santhosh.endDate);
     System.out.println(bob.getAge());
-    System.out.println(bob.collectPay());
+    System.out.println(bob.collectPay(5));
     System.out.println(bob.getDoublePay());
     bob.terminate(bob.endDate);
     System.out.println(santhosh);

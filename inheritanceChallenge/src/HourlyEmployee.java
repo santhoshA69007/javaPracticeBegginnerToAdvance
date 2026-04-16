@@ -13,10 +13,13 @@ public class HourlyEmployee extends Employee  {
     }
 
 
-    @Override
-    public double collectPay() {
-        return hourlyPay;
+
+
+    public double collectPay(int num) {
+        return num;
     }
+
+
 
     @Override
     public String toString() {
