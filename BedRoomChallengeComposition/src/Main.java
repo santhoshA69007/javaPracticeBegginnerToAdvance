@@ -17,5 +17,5 @@ void main() {
 
     bedRoom.getLamp().turnOn();
 
-    
+
 }
