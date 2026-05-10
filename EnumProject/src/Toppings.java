@@ -1,0 +1,18 @@
+public enum Toppings {
+
+    MUSTARD,
+    PICKLES,
+    BACON,
+    CHEDDAR,
+    TOMATO;
+//if further customization means add semicolon to end the list otherwise dont
+
+    public double getPrice(){
+        return switch (this){
+            case BACON -> 1.5;
+            case CHEDDAR -> 1.0;
+            default -> 0.0;
+        };
+    }
+
+}
