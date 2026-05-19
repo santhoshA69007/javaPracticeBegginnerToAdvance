@@ -1,6 +1,8 @@
 import javax.swing.*;
 
 void main() {
+
+    var philly=new Affliation("city","Philadephia Pa","US");
 BaseballTeam phillies1=new BaseballTeam("Philadephia phillies");
 BaseballTeam astros1=new BaseballTeam("Houston Astros");
 scoreResult(phillies1,3,astros1,5);
@@ -10,8 +12,8 @@ scoreResult(phillies1,3,astros1,5);
     SportsTeam astros2=new SportsTeam("Houston Astros");
     scoreResult(phillies2,3,astros2,5);
 
-    Team<BaseballPlayer> phillies=new Team("Philadephia phillies");
-    Team<BaseballPlayer> astros=new Team("Houston Astros");
+    Team<BaseballPlayer,Affliation> phillies=new Team("Philadephia phillies",philly);
+    Team<BaseballPlayer,Affliation> astros=new Team("Houston Astros");
     var guthrie =new  BaseballPlayer("D Guthrie","Center Fielder");
     phillies.addTeamMember(guthrie);
     scoreResult(phillies,3,astros,5);
@@ -23,12 +25,23 @@ phillies.addTeamMember(harper);
 phillies.addTeamMember(marsh);
 phillies.listTeamMembers();
 
-    Team<FootballPlayer> afc =new Team<FootballPlayer>("Adelaide Crows");
+    Team<FootballPlayer,Affliation> afc =new Team<FootballPlayer,Affliation>("Adelaide Crows");
     var tex=new FootballPlayer("Tex Walker","Centre half forward");
     afc.addTeamMember(tex);
     afc.listTeamMembers();
 
     afc.listTeamMembers();
+
+
+    Team<VolleyballPlayer,Affliation> adelaide =new Team<>("Adelaide Storm");
+    adelaide.addTeamMember(new VolleyballPlayer("N Roberts","Setter"));
+    adelaide.listTeamMembers();
+
+    var canberra= new Team<VolleyballPlayer,Affliation>("Canberra Heat");
+    canberra.addTeamMember(new VolleyballPlayer("B Black","Opposite"));
+    canberra.listTeamMembers();
+    scoreResult(canberra,0,adelaide,1);
+
 
 }
 
